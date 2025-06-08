@@ -20,7 +20,6 @@ app.use("/", express.static(path.join(__dirname, "/public")))
 
 app.use("/", require("./routes/index"))
 
-app.use("/users", require("./routes/userRoutes.js"))
 app.use("/books", require("./routes/bookRoutes.js"))
 
 app.all("*", (req, res) => {
