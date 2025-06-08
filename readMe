@@ -21,7 +21,11 @@ git clone git@github.com:BY4j/the_atlas.git
 2. Entrez dans le dépôt et installer ses dépendances :
 
 cd the_atlas
-npm install
+
+**ATTENTION** La commande suivante : "npm install" est à réalisé dans les deux dossiers suivants :
+-the_atlas/client
+-the_atlas/server
+
 
 
 3. Configurez MongoDB :
