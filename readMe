@@ -1,0 +1,42 @@
+# The Atlas
+
+-- Description
+
+The Atlas est une application qui permet de gérer des annonces de livres avec un CRUD simple.
+
+
+-- Préréquis
+
+- Node.js installé
+- Compte MongoDB Atlas
+- npm
+
+
+-- Installation
+
+1. Clonez le dépôt suivant dans un dossier de votre choix en utilisant le terminal :
+
+git clone git@github.com:BY4j/the_atlas.git
+
+2. Entrez dans le dépôt et installer ses dépendances :
+
+cd the_atlas
+npm install
+
+
+3. Configurez MongoDB :
+    1. Créez un compte sur MongoDB Atlas
+    2. Créez un nouveau cluster (gratuit)
+    3. Dans la section **Database Access**, créez un utilisateur avec un nom d’utilisateur et mot de passe.
+    4. Dans la section **Network Access**, ajoutez votre adresse IP (ou utilisez 0.0.0.0/0 pour autoriser toutes les IPs).
+    5. Dans votre cluster, créez une nouvelle collection, nommez la : TheAtlasDB
+    6. Récupérez l’URI de connexion :
+        -Sélectionnez Cluster
+        -Dans la section Overview cliquez sur le bouton "Connect"
+        -Séléctionnez la méthode "Drivers"
+        -Copiez la "connection string" (URI de connection)
+    7. Dans la racine du projet, créez un fichier **.env** et collez l'URI de connection dans le fichier :
+    ( exemple de .env : 
+    DATABASE_URI = mongodb+srv://<db_username>:<db_password>@cluster0.aw79ejg.mongodb.net/<db_name>?retryWrites=true&w=majority&appName=Cluster0 )
+    
+**ATTENTION**, 
