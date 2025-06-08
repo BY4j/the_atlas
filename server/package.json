@@ -1,0 +1,33 @@
+{
+  "name": "the_atlas",
+  "version": "1.0.0",
+  "description": "The ATLAS project",
+  "homepage": "https://github.com/BY4j/the_atlas#readme",
+  "bugs": {
+    "url": "https://github.com/BY4j/the_atlas/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BY4j/the_atlas.git"
+  },
+  "license": "ISC",
+  "author": "Brandon YANG",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.15.1"
+  }
+}
